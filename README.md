@@ -1,8 +1,9 @@
 # MiniWms
-Design a simplified backend service for a warehouse inventory system
+Design a simplified backend service for a warehouse inventory 
 
-Below is a clear, ready set of diagrams for the Mini WMS (Warehouse Management System) backend.
-These diagrams directly map to your requirements: inventory safety, concurrency, and idempotent retries.
+* given to png image for Short architecture diagram
+* given to API colletion file
+* given to flow in screenshort format
 
 
 
