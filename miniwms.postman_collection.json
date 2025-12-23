@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "ff68bcb9-1546-4df5-b4e5-608349372324",
+		"name": "miniwms",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50991831",
+		"_collection_link": "https://arpitavirani29-5863186.postman.co/workspace/Arpita-Virani's-Workspace~2f8edb1b-7665-4561-877a-4a31e3bd9a9f/collection/50991831-ff68bcb9-1546-4df5-b4e5-608349372324?action=share&source=collection_link&creator=50991831"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/orders/shipOrder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\":\"ORDER-002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/shipOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"shipOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/inventory/reserveOrder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU-001\",\r\n    \"quantity\": 10,\r\n    \"orderId\":\"ORDER-002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/inventory/reserveOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"reserveOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/inventory/receiveOrder",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"SKU-001\",\r\n    \"quantity\": 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/inventory/receiveOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventory",
+						"receiveOrder"
+					],
+					"query": [
+						{
+							"key": "sku",
+							"value": "SKU-123",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
